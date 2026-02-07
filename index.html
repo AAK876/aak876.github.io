@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Support Us</title>
+	<style>
+	body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f9;
+	}
+
+	.support-container {
+		display: flex; /* Arranges boxes in a row */
+		gap: 20px; /* Space between boxes */
+		flex-wrap: wrap; /* Allows wrapping on mobile */
+		justify-content: center;
+	}
+
+	.support-card {
+		background: white;
+		padding: 30px;
+		border-radius: 12px;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Elegant drop shadow */
+		text-align: center;
+		width: 280px;
+		transition: transform 0.3s ease;
+	}
+
+	.support-card:hover {
+		transform: translateY(-5px); /* Hover animation */
+	}
+
+	.price {
+		font-size: 24px;
+		font-weight: bold;
+		margin: 15px 0;
+		color: #333;
+	}
+
+	.paypal-button {
+		display: inline-block;
+		background-color: #0070ba; /* PayPal Blue */
+		color: white;
+		padding: 12px 24px;
+		text-decoration: none;
+		border-radius: 25px;
+		font-weight: bold;
+		transition: background-color 0.2s;
+	}
+
+	.paypal-button:hover {
+		background-color: #005ea6;
+	}
+	</style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="support-container">
+        <!-- Box 1: Basic Support -->
+        <div class="support-card">
+            <h3>One-time USD$ 5 Support</h3>
+            <p>Help us keep the lights on with a small contribution.</p>
+            <div class="price">US$5.00</div>
+            <div id="paypal-button-container-P-0G6881718E9162158NGDXK3A"></div>
+        </div>
+
+        <!-- Box 2: Premium Support -->
+        <div class="support-card">
+            <h3>One-time USD$ 10 Support</h3>
+            <p>A larger contribution to help us grow and expand.</p>
+            <div class="price">US$10.00</div>
+            <!-- Replace # with your PayPal Link -->
+            <div id="paypal-button-container-P-5F050158DE351440BNGDYLKY"></div>
+        </div>
+		
+		<!-- Box 3: Premium Support -->
+		<div class="support-card">
+            <h3>Monthly USD$ 5 Support</h3>
+            <p>A larger contribution to help us grow and expand.</p>
+            <div class="price">US$5.00</div>
+            <!-- Replace # with your PayPal Link -->
+            <div id="paypal-button-container-P-4YF87202C5541980XNGDYYWA"></div>
+        </div>
+    </div>
+	<script src="https://www.paypal.com/sdk/js?client-id=Ae_HTh9dS1iM3fmBqTgNcVeSD3AZ5XajvOYp76ug1BT4rf7K3Wthmwv1aN5fZSSh8-2_yLcQ0aTE8jga&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
+	<script>
+	  paypal.Buttons({
+		  style: {
+			  shape: 'rect',
+			  color: 'silver',
+			  layout: 'vertical',
+			  label: 'paypal'
+		  },
+		  createSubscription: function(data, actions) {
+			return actions.subscription.create({
+			  /* Creates the subscription */
+			  plan_id: 'P-0G6881718E9162158NGDXK3A'
+			});
+		  },
+		  onApprove: function(data, actions) {
+			alert(data.subscriptionID); // You can add optional success message for the subscriber here
+		  }
+	  }).render('#paypal-button-container-P-0G6881718E9162158NGDXK3A'); // Renders the PayPal button
+	</script>
+	<script>
+	  paypal.Buttons({
+		  style: {
+			  shape: 'rect',
+			  color: 'silver',
+			  layout: 'vertical',
+			  label: 'subscribe'
+		  },
+		  createSubscription: function(data, actions) {
+			return actions.subscription.create({
+			  /* Creates the subscription */
+			  plan_id: 'P-5F050158DE351440BNGDYLKY'
+			});
+		  },
+		  onApprove: function(data, actions) {
+			alert(data.subscriptionID); // You can add optional success message for the subscriber here
+		  }
+	  }).render('#paypal-button-container-P-5F050158DE351440BNGDYLKY'); // Renders the PayPal button
+	</script>
+	<script>
+	  paypal.Buttons({
+		  style: {
+			  shape: 'rect',
+			  color: 'silver',
+			  layout: 'vertical',
+			  label: 'paypal'
+		  },
+		  createSubscription: function(data, actions) {
+			return actions.subscription.create({
+			  /* Creates the subscription */
+			  plan_id: 'P-4YF87202C5541980XNGDYYWA'
+			});
+		  },
+		  onApprove: function(data, actions) {
+			alert(data.subscriptionID); // You can add optional success message for the subscriber here
+		  }
+	  }).render('#paypal-button-container-P-4YF87202C5541980XNGDYYWA'); // Renders the PayPal button
+	</script>
+</body>
+</html>
