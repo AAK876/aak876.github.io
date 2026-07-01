@@ -3,147 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support Us</title>
-	<style>
-	body {
-    font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    background-color: #f4f4f9;
-	}
+    <title>Amr A. AlKhuffash</title>
+    <style>
+        /* Base page styling */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
+            display: flex;
+            justify-content: center;
+        }
 
-	.support-container {
-		display: flex; /* Arranges boxes in a row */
-		gap: 20px; /* Space between boxes */
-		flex-wrap: wrap; /* Allows wrapping on mobile */
-		justify-content: center;
-	}
+        /* Title banner styling */
+        .page-header {
+            width: 100%;
+            background-color: #003ec0;
+            padding: 25px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
 
-	.support-card {
-		background: white;
-		padding: 30px;
-		border-radius: 12px;
-		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Elegant drop shadow */
-		text-align: center;
-		width: 280px;
-		transition: transform 0.3s ease;
-	}
-
-	.support-card:hover {
-		transform: translateY(-5px); /* Hover animation */
-	}
-
-	.price {
-		font-size: 24px;
-		font-weight: bold;
-		margin: 15px 0;
-		color: #333;
-	}
-
-	.paypal-button {
-		display: inline-block;
-		background-color: #0070ba; /* PayPal Blue */
-		color: white;
-		padding: 12px 24px;
-		text-decoration: none;
-		border-radius: 25px;
-		font-weight: bold;
-		transition: background-color 0.2s;
-	}
-
-	.paypal-button:hover {
-		background-color: #005ea6;
-	}
-	</style>
-    <link rel="stylesheet" href="style.css">
+        /* The actual page title text */
+        .page-title {
+            color: #ffffff;
+            margin: 0;
+            font-size: 2.2rem;
+            font-weight: 600;
+            letter-spacing: 1px;
+        }
+		/**/
+		.contacts {
+			position:absolute;
+			top: 10%;
+			width: 100%;
+			color: #000000;
+			padding: 25px 0;
+            text-align: center;
+		}
+    </style>
 </head>
 <body>
-    <div class="support-container">
-        <!-- Box 1: Basic Support -->
-        <div class="support-card">
-            <h3>One-time USD$ 5 Support</h3>
-            <p>Help us keep the lights on with a small contribution.</p>
-            <div class="price">US$5.00</div>
-            <div id="paypal-button-container-P-0G6881718E9162158NGDXK3A"></div>
-        </div>
 
-        <!-- Box 2: Premium Support -->
-        <div class="support-card">
-            <h3>One-time USD$ 10 Support</h3>
-            <p>A larger contribution to help us grow and expand.</p>
-            <div class="price">US$10.00</div>
-            <!-- Replace # with your PayPal Link -->
-            <div id="paypal-button-container-P-5F050158DE351440BNGDYLKY"></div>
-        </div>
-		
-		<!-- Box 3: Premium Support -->
-		<div class="support-card">
-            <h3>Monthly USD$ 5 Support</h3>
-            <p>A larger contribution to help us grow and expand.</p>
-            <div class="price">US$5.00</div>
-            <!-- Replace # with your PayPal Link -->
-            <div id="paypal-button-container-P-4YF87202C5541980XNGDYYWA"></div>
-        </div>
-    </div>
-	<script src="https://www.paypal.com/sdk/js?client-id=Ae_HTh9dS1iM3fmBqTgNcVeSD3AZ5XajvOYp76ug1BT4rf7K3Wthmwv1aN5fZSSh8-2_yLcQ0aTE8jga&vault=true&intent=subscription" data-sdk-integration-source="button-factory"></script>
-	<script>
-	  paypal.Buttons({
-		  style: {
-			  shape: 'rect',
-			  color: 'silver',
-			  layout: 'vertical',
-			  label: 'paypal'
-		  },
-		  createSubscription: function(data, actions) {
-			return actions.subscription.create({
-			  /* Creates the subscription */
-			  plan_id: 'P-0G6881718E9162158NGDXK3A'
-			});
-		  },
-		  onApprove: function(data, actions) {
-			alert(data.subscriptionID); // You can add optional success message for the subscriber here
-		  }
-	  }).render('#paypal-button-container-P-0G6881718E9162158NGDXK3A'); // Renders the PayPal button
-	</script>
-	<script>
-	  paypal.Buttons({
-		  style: {
-			  shape: 'rect',
-			  color: 'silver',
-			  layout: 'vertical',
-			  label: 'subscribe'
-		  },
-		  createSubscription: function(data, actions) {
-			return actions.subscription.create({
-			  /* Creates the subscription */
-			  plan_id: 'P-5F050158DE351440BNGDYLKY'
-			});
-		  },
-		  onApprove: function(data, actions) {
-			alert(data.subscriptionID); // You can add optional success message for the subscriber here
-		  }
-	  }).render('#paypal-button-container-P-5F050158DE351440BNGDYLKY'); // Renders the PayPal button
-	</script>
-	<script>
-	  paypal.Buttons({
-		  style: {
-			  shape: 'rect',
-			  color: 'silver',
-			  layout: 'vertical',
-			  label: 'paypal'
-		  },
-		  createSubscription: function(data, actions) {
-			return actions.subscription.create({
-			  /* Creates the subscription */
-			  plan_id: 'P-4YF87202C5541980XNGDYYWA'
-			});
-		  },
-		  onApprove: function(data, actions) {
-			alert(data.subscriptionID); // You can add optional success message for the subscriber here
-		  }
-	  }).render('#paypal-button-container-P-4YF87202C5541980XNGDYYWA'); // Renders the PayPal button
-	</script>
+    <!-- Header section containing the title -->
+    <header class="page-header">
+        <h1 class="page-title">Amr A. AlKhuffash</h1>
+    </header>
+	<p class="contacts">Contact me on WhatsApp number +962 77 5139 444, or send me an email at a.khuffash.3astec@gmail.com
+	</p>
 </body>
 </html>
