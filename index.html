@@ -34,24 +34,102 @@
         }
 		
 		/**/
-		.contacts-section {
+		.navig {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+			padding: 5px 0;
+		}
+		
+		/**/
+		.tile {
+			background: white;
+			padding: 30px;
+			border-radius: 12px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Elegant drop shadow */
+			text-align: center;
+			width: 280px;
+			transition: transform 0.3s ease;
+			border-style: solid;
+			border-color: white;
+			&:hover {border-color: #003ec0;}
+		}
+		
+		/**/
+		.body-section {
 			width: 100%;
+			height: 80%;
 			color: #000000;
 			padding: 25px 0;
             text-align: center;
 		}
+		
+		.news-container {
+			display: flex;
+			gap: 20px;
+			flex-wrap: wrap;
+			justify-content: center;
+		}
+		
+		.news-box {
+			background: white;
+			padding: 30px;
+			border-radius: 12px;
+			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+			text-align: center;
+			width: 280px;
+			transition: transform 0.3s ease;
+			border-style: solid;
+			border-color: white;
+			&:hover {border-color: #003ec0;}
+		}
+		
+		/**/
+		.page-footer {
+			position: absolute;
+			width: 100%;
+			bottom: 0px;
+			padding: 0;
+			text-align: center;
+		}
     </style>
 </head>
 <body>
-    <header class="page-header">
+    <header class="page-header"  id="pagehead">
         <h1 class="page-title">Amr A. AlKhuffash</h1>
     </header>
-	<br>
-	<section class="contacts-section">
-		<h1 id="tease1">Are you looking for an AI Solution?</h1>
-		<h2 id="tease2">Then you're in the right place</h2>
-		<p id="detail1">I am an AI Architect and Engineer that works on AI solution projects in different sectors. I work with my client on their needs and transform these needs into live AI solutions and system.</p>
-		<p id="contactinfo">Contact me on WhatsApp number +962 77 5139 444, or send me an email at amralkhuffash@hotmail.com</p>
+	<nav class="navig">
+		<div class="tile" id="title1">
+            <h3>Data Engineering Solutions</h3>
+            <!--<p>Help us keep the lights on with a small contribution.</p>
+            <div class="price">US$5.00</div>
+            <div id="paypal-button-container-P-0G6881718E9162158NGDXK3A"></div>-->
+        </div>
+		<div class="tile" id="title2">
+            <h3>AI Solutions</h3>
+            <!--<p>A larger contribution to help us grow and expand.</p>
+            <div class="price">US$10.00</div>
+             Replace # with your PayPal Link 
+            <div id="paypal-button-container-P-5F050158DE351440BNGDYLKY"></div>-->
+        </div>
+		<div class="tile" id="title2">
+            <h3>Consultations Services</h3>
+            <!--<p>A larger contribution to help us grow and expand.</p>
+            <div class="price">US$5.00</div>
+             Replace # with your PayPal Link 
+            <div id="paypal-button-container-P-4YF87202C5541980XNGDYYWA"></div>-->
+        </div>
+	</nav>
+	<section class="body-section news-container"  id="pagebody">
+		<div class="news-box" id="title2">
+            <h1 id="tease1">Are you looking for an AI Solution?</h1>
+			<h2 id="tease2">Then you're in the right place</h2>
+			<p id="detail1">I am an AI Architect and Engineer that works on AI solution projects in different sectors. I work with my client on their needs and transform these needs into live AI solutions and system.</p>
+        </div>
 	</section>
+	<footer class="page-footer" id="pagefoot">
+		<p id="contactinfo">Contact me on WhatsApp number +962 77 5139 444, or send me an email at amralkhuffash@hotmail.com</p>
+	</footer>
 </body>
 </html>
