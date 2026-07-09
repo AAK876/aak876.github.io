@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Amr A. AlKhuffash</title>
     <style>
-        /* Base page styling */
+        /*Base page styling*/
         body {
             margin: 0;
             padding: 0;
@@ -15,16 +15,16 @@
             justify-content: center;
         }
 
-        /* Title banner styling */
+        /*Header Part*/
         .page-header {
             width: 100%;
+			height: 6vh;
             background-color: #003ec0;
             padding: 25px 0;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
         }
 
-        /* The actual page title text */
         .page-title {
             color: #ffffff;
             margin: 0;
@@ -33,7 +33,7 @@
             letter-spacing: 1px;
         }
 		
-		/**/
+		/*Navigator Part*/
 		.navig {
 			display: flex;
 			gap: 20px;
@@ -42,7 +42,6 @@
 			padding: 5px 0;
 		}
 		
-		/**/
 		.tile {
 			background: white;
 			padding: 30px;
@@ -56,7 +55,7 @@
 			&:hover {border-color: #003ec0;}
 		}
 		
-		/**/
+		/*Body part*/
 		.body-section {
 			width: 100%;
 			height: 80%;
@@ -67,6 +66,8 @@
 		
 		.news-container {
 			display: flex;
+			width: 100%;
+			height: 65vh;
 			gap: 20px;
 			flex-wrap: wrap;
 			justify-content: center;
@@ -78,19 +79,22 @@
 			border-radius: 12px;
 			box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 			text-align: center;
-			width: 280px;
+			width: 15%;
+			height: 90%;
 			transition: transform 0.3s ease;
 			border-style: solid;
 			border-color: white;
 			&:hover {border-color: #003ec0;}
 		}
 		
-		/**/
+		/*Footer part*/
 		.page-footer {
 			position: absolute;
 			width: 100%;
+			height: 4vh;
 			bottom: 0px;
 			padding: 0;
+			margin: 0;
 			text-align: center;
 		}
     </style>
@@ -122,11 +126,16 @@
         </div>
 	</nav>
 	<section class="body-section news-container"  id="pagebody">
-		<div class="news-box" id="title2">
+		<div class="news-box" id="nb1">
             <h1 id="tease1">Are you looking for an AI Solution?</h1>
 			<h2 id="tease2">Then you're in the right place</h2>
 			<p id="detail1">I am an AI Architect and Engineer that works on AI solution projects in different sectors. I work with my client on their needs and transform these needs into live AI solutions and system.</p>
         </div>
+		<!--<div class="news-box" id="nb2">
+            <h1 id="tease1">Are you looking for an AI Solution?</h1>
+			<h2 id="tease2">Then you're in the right place</h2>
+			<p id="detail1">I am an AI Architect and Engineer that works on AI solution projects in different sectors. I work with my client on their needs and transform these needs into live AI solutions and system.</p>
+        </div>-->
 	</section>
 	<footer class="page-footer" id="pagefoot">
 		<p id="contactinfo">Contact me on WhatsApp number +962 77 5139 444, or send me an email at amralkhuffash@hotmail.com</p>
