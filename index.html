@@ -91,11 +91,15 @@
 		}
 		
 		p.nb-details {
-			text-align:left;
+			text-align: left;
 		}
 		
 		.Isteqlal {
-			text-align:left;
+			text-align: center;
+		}
+		
+		td.text-left {
+			text-align: left;
 		}
 		
 		/*Footer part*/
@@ -154,20 +158,21 @@
 			<p class="nb-details">WhatsApp: +962 77 5139 444</p>
 			<p class="nb-details">email: amralkhuffash@hotmail.com</p>
 			<p class="nb-details">LinkedIn: <a href="https://www.linkedin.com/in/amr-a-alkhuffash-aak76">www.linkedin.com/in/amr-a-alkhuffash-aak76</a></p>
-			<p class="nb-details">GitHub: <a href="https://github.com/aak876">"www.github.com/aak876"</a></p>
+			<p class="nb-details">GitHub: <a href="https://github.com/aak876">www.github.com/aak876</a></p>
         </div>
 	</section>
 	<section class="body-section" style="display:none;" id="chsingme">
+		<span style="position:relative;right:-48%;cursor:pointer;font-size:30px;" onclick="closectrl('chsingme')">&#10006;</span>
 		<h1>Services Pricing List</h1>
 		<h2>Forms of Partnership and Services Providing</h2>
-		<span style="position:relative;right:-48%;cursor:pointer;" onclick="closectrl('chsingme')">&#10006;</span>
-		<table class="Isteqlal" style="">
-			<tr style="font-weight:18;"><td>Service Category</td><td>Details</td><td>Hourly rate</td></tr>
-			<tr><td>Architecture</td><td>Client Requirements Gathering, Requirements Evaluation, Solution Architecuture</td><td>US$ 130</td></tr>
-			<tr><td>Engineering</td><td>Detailed Design, Development and Testing</td><td>US$ 90</td></tr>
-			<tr><td>MLOp</td><td>Deployment of Solutions, Less than 4 working hours customizations</td><td>US$ 65</td></tr>
-			<tr><td>Consultations Services</td><td>Training, High Level Support</td><td>US$ 105</td></tr>
+		<table class="" style="width: 60%;position:relative;left:20%;">
+			<tr style="font-size:20px;"><td><b>Service Category</b></td><td><b>Details</b></td><td><b>Hourly rate</b></td></tr>
+			<tr><td class="text-left">Architecture</td><td class="text-left">Client Requirements Gathering, Requirements Evaluation, Solution Architecuture</td><td>US$ 130</td></tr>
+			<tr><td class="text-left">Engineering</td><td class="text-left">Detailed Design, Development and Testing</td><td>US$ 90</td></tr>
+			<tr><td class="text-left">MLOp</td><td class="text-left">Deployment of Solutions, Less than 4 working hours customizations</td><td>US$ 65</td></tr>
+			<tr><td class="text-left">Consultations Services</td><td class="text-left">Training, High Level Support</td><td>US$ 105</td></tr>
 		</table>
+		<br><br>
 		<p class="Isteqlal">Outsourcing and Partnership contracts are also available, and pricing is per case.</p>
 	</section>
 	<footer class="page-footer" id="pagefoot">
