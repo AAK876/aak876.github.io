@@ -14,6 +14,8 @@
             color: #333;
             justify-content: center;
         }
+		
+		.clickable {cursor:pointer;}
 
         /*Header Part*/
         .page-header {
@@ -144,7 +146,7 @@
 			<h2>A Business Executive Assisting Bot</h2>
 			<p>Working on a business bot that help executive to bring in data that are mined from their own databases and from the internet about some entity to help in their decision making process.</p>
         </div>
-		<div class="news-box" id="nb3" onclick="nbclick(3)">
+		<div class="news-box clickable" id="nb3" onclick="nbclick(3)">
             <h1>Get in touch</h1>
 			<h2>Let's build the future</h2>
 			<p>Let us discuss your needs and and how I can step in to make a better use of your data and technology systems you have.</p>
@@ -161,10 +163,10 @@
         </div>
 	</section>
 	<section class="body-section" style="display:none;" id="chsingme">
-		<span style="position:relative;right:-48%;cursor:pointer;font-size:30px;" onclick="closectrl('chsingme')">&#10006;</span>
+		<span class="clickable" style="position:relative;right:-48%;font-size:30px;" onclick="closectrl('chsingme')">&#10006;</span>
 		<h1>Services Pricing List</h1>
 		<h2>Forms of Partnership and Services Providing</h2>
-		<p>When I work for end-using clients through making them either a components above an existing systems, or a whole ecosystem, I charge the as follows
+		<p>When I work for end-using clients through making them either a components above an existing systems, or a whole ecosystem, I charge the as follows</p>
 		<table class="" style="width: 60%;position:relative;left:20%;">
 			<tr style="font-size:20px;"><td><b>Service Category</b></td><td><b>Details</b></td><td><b>Hourly rate</b></td></tr>
 			<tr><td class="text-left">Architecture</td><td class="text-left">Client Requirements Gathering, Requirements Evaluation, Solution Architecuture</td><td>US$ 130</td></tr>
